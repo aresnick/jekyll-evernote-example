@@ -1,0 +1,30 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evernote export example</title>
+	<style>
+	/* Sample styling for posts */
+	.evernote.post {
+		border: 1px solid black;
+		padding: 1em;
+		margin: 1em;
+	}
+
+	/* Note that Evernote exports images with width and height attributes inline which need to be overriden; height: auto ensures the aspect ratio is preserved. */
+	.evernote.post img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	</style>
+</head>
+<body>
+	{% for post in site.evernotes %}
+	<div class='evernote post'>
+	{{ post.content }}
+	</div>
+	{% endfor %}
+</body>
+</html>
