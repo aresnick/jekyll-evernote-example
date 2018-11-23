@@ -1,4 +1,8 @@
+# Path where we want to store Evernote media
 evernote_media_export_path: "media/evernote-export"
+
+# Exclude our library so we aren't copying npm libraries over, which can add a lot of time to regeneration
+exclude: ["import-evernote-for-jekyll*", "README.md"]
 
 collections:
   - evernotes
