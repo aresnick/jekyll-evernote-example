@@ -23,7 +23,23 @@
 <body>
 	{% for post in site.evernotes %}
 	<div class='evernote post'>
-	{{ post.content }}
+	<h3>{{ post.title }}</h3>
+	<ul class='meta'>
+		<li class='author'>Author: {{ post.author }}</li>
+		<li class='date-created'>Created: {{ post.dateCreated }}</li>
+		<li class='date-updated'>Updated: {{ post.dateUpdated }}</li>
+		<li class='tags'>
+			Tags:
+			<ul>
+				{% for tag in post.tags %}
+				<li class='tag'>{{ tag }}</li>
+				{% endfor %}
+			</ul>
+		</li>
+	</ul>
+	<div class='content'>
+		{{ post.content }}
+	</div>
 	</div>
 	{% endfor %}
 </body>
