@@ -8,7 +8,7 @@ This repository serves as an example of how you can use [this script](https://gi
 
 ## Installation
 To use this example on your own site:
-- [ ] Download [the latest release](https://github.com/aresnick/import-evernote-for-jekyll/archive/v0.1.1.zip) into the root of your Jekyll folder and unzip it.
+- [ ] Download [the latest release](https://github.com/aresnick/import-evernote-for-jekyll/archive/v0.2.2.zip) into the root of your Jekyll folder and unzip it.
 - [ ] `cd` into the release folder and run `npm install`.
 
 ## Use
